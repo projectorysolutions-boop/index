@@ -790,7 +790,7 @@
         }
 
         // Gemini API Configuration
-        const apiKey = ""; // System will provide the key
+        const apiKey = process.env.GEMINI_API_KEY || window.ENV?.GEMINI_API_KEY || "";
         const generateBtn = document.getElementById('generateBtn');
         const ideaInput = document.getElementById('ideaInput');
         const loadingState = document.getElementById('loadingState');
